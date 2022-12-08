@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "BookSearchApp (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "BookSearchApp (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

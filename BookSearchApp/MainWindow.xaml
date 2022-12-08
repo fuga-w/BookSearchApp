@@ -1,0 +1,21 @@
+<!-- Copyright (c) Microsoft Corporation and Contributors. -->
+<!-- Licensed under the MIT License. -->
+
+<Window
+    x:Class="BookSearchApp.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BookSearchApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
+    mc:Ignorable="d">
+
+    <StackPanel>
+        <RelativePanel HorizontalAlignment="Center">
+            <TextBox x:Name="isbn_input" Header="ISBN" Width="300"></TextBox>
+            <Button x:Name="search_buttom" RelativePanel.RightOf="isbn_input" RelativePanel.AlignBottomWith="isbn_input" Click="SearchBook">Search</Button>
+        </RelativePanel>
+        <controls:DataGrid x:Name="search_result_table"/>
+    </StackPanel>
+</Window>
